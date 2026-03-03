@@ -1,0 +1,40 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Add 3-option List/Rent/Invest interface on Home page",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Update HomePage to prominently display a responsive, above-the-fold 3-option interface labeled exactly “List”, “Rent”, and “Invest”, consistent with existing Tailwind typography/spacing.",
+      "acceptanceCriteria": [
+        "When visiting \"/\", users can clearly see three distinct options labeled \"List\", \"Rent\", and \"Invest\" without scrolling on common laptop/mobile viewports (responsive).",
+        "The option labels are in English and match exactly: \"List\", \"Rent\", \"Invest\".",
+        "The section is visually consistent with the existing site styling (Tailwind + existing typography/spacing conventions already used on HomePage)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/HomePage.tsx",
+          "operation": "modify",
+          "description": "Within the hero area (above the current fold), add a 3-option UI presenting exactly three primary actions labeled “List”, “Rent”, and “Invest”. Compose existing shadcn-ui primitives already used on the page (e.g., Button) and Tailwind utility classes to match existing HomePage styling; do not modify any files under frontend/src/components/ui. Ensure responsive layout (e.g., stacked on small screens, 3-column on larger screens) so the three options are visible without scrolling. Verify the component's usage instructions before implementing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Wire the HomePage “List”, “Rent”, and “Invest” options to navigate to existing routes using TanStack Router’s useNavigate pattern.",
+      "acceptanceCriteria": [
+        "Clicking/tapping \"List\" navigates to the existing Listing marketing page at \"/listing\".",
+        "Clicking/tapping \"Rent\" navigates to the existing Rent page at \"/rent\".",
+        "Clicking/tapping \"Invest\" navigates to the existing Invest page at \"/invest\".",
+        "Navigation uses existing routing patterns already present in HomePage (useNavigate with navigate({ to: ... }))."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/HomePage.tsx",
+          "operation": "modify",
+          "description": "Add click/tap handlers for the three options using the existing useNavigate hook, calling navigate({ to: '/listing' }), navigate({ to: '/rent' }), and navigate({ to: '/invest' }) respectively. Keep routing unchanged elsewhere (no App.tsx route edits) and reuse existing HomePage navigation patterns. Verify the component's usage instructions before implementing."
+        }
+      ]
+    }
+  ]
+}

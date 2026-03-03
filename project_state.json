@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Project to build a home page interface with three primary user options: List, Rent, and Invest.",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-update-the-home-page-route-file-frontend-src-pages-homepage-tsx-to-prominently-display-a-3-option-interface-with-exactly-three-primary-options-list-rent-and-invest",
+      "title": "Update the HOME page (route \"/\", file: frontend/src/pages/HomePage.tsx) to prominently display a 3-option interface with exactly three primary options: \"List\", \"Rent\", and \"Invest\".",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-wire-the-three-home-page-options-to-existing-routes-using-tanstack-router-navigation-list-navigates-to-listing-rent-navigates-to-rent-and-invest-navigates-to-invest",
+      "title": "Wire the three HOME page options to existing routes using TanStack Router navigation: \"List\" navigates to \"/listing\", \"Rent\" navigates to \"/rent\", and \"Invest\" navigates to \"/invest\".",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create HOME page interface offering 3 options: List, Rent, Invest",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "projectName": "Add three-option HOME page interface (List, Rent, Invest)",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

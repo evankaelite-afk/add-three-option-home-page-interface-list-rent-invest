@@ -1,0 +1,43 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-update-the-home-page-route-file-frontend-src-pages-homepage-tsx-to-prominently-display-a-3-option-interface-with-exactly-three-primary-options-list-rent-and-invest",
+      "featureTitle": "Update the HOME page (route \"/\", file: frontend/src/pages/HomePage.tsx) to prominently display a 3-option interface with exactly three primary options: \"List\", \"Rent\", and \"Invest\".",
+      "files": [
+        "frontend/src/pages/HomePage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-wire-the-three-home-page-options-to-existing-routes-using-tanstack-router-navigation-list-navigates-to-listing-rent-navigates-to-rent-and-invest-navigates-to-invest",
+      "featureTitle": "Wire the three HOME page options to existing routes using TanStack Router navigation: \"List\" navigates to \"/listing\", \"Rent\" navigates to \"/rent\", and \"Invest\" navigates to \"/invest\".",
+      "files": [
+        "frontend/src/pages/HomePage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

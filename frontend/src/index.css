@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0rem;
+        /* Urbanet-inspired: Clean whites, deep charcoal, warm gold accents */
+        --background: 0.99 0 0;
+        --foreground: 0.15 0.01 260;
+        --card: 1 0 0;
+        --card-foreground: 0.15 0.01 260;
+        --popover: 1 0 0;
+        --popover-foreground: 0.15 0.01 260;
+        /* Deep charcoal for primary actions */
+        --primary: 0.20 0.02 260;
+        --primary-foreground: 0.99 0 0;
+        /* Warm gold accent */
+        --secondary: 0.75 0.12 65;
+        --secondary-foreground: 0.15 0.01 260;
+        --muted: 0.96 0.005 260;
+        --muted-foreground: 0.48 0.02 260;
+        --accent: 0.92 0.08 65;
+        --accent-foreground: 0.15 0.01 260;
+        --destructive: 0.55 0.22 25;
+        --destructive-foreground: 0.99 0 0;
+        --border: 0.88 0.01 260;
+        --input: 0.88 0.01 260;
+        --ring: 0.20 0.02 260;
+        --chart-1: 0.20 0.02 260;
+        --chart-2: 0.75 0.12 65;
+        --chart-3: 0.60 0.12 200;
+        --chart-4: 0.45 0.10 280;
+        --chart-5: 0.70 0.15 160;
+    }
+
+    .dark {
+        --background: 0.10 0.01 260;
+        --foreground: 0.96 0.005 260;
+        --card: 0.14 0.01 260;
+        --card-foreground: 0.96 0.005 260;
+        --popover: 0.12 0.01 260;
+        --popover-foreground: 0.96 0.005 260;
+        --primary: 0.75 0.12 65;
+        --primary-foreground: 0.10 0.01 260;
+        --secondary: 0.75 0.12 65;
+        --secondary-foreground: 0.10 0.01 260;
+        --muted: 0.18 0.01 260;
+        --muted-foreground: 0.65 0.02 260;
+        --accent: 0.22 0.02 260;
+        --accent-foreground: 0.96 0.005 260;
+        --destructive: 0.60 0.20 25;
+        --destructive-foreground: 0.96 0.005 260;
+        --border: 0.22 0.01 260;
+        --input: 0.22 0.01 260;
+        --ring: 0.75 0.12 65;
+        --chart-1: 0.75 0.12 65;
+        --chart-2: 0.88 0.08 80;
+        --chart-3: 0.65 0.12 200;
+        --chart-4: 0.55 0.10 280;
+        --chart-5: 0.75 0.15 160;
+    }
+
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground antialiased;
+        font-feature-settings: "kern" 1, "liga" 1;
+    }
+}
+
+@layer components {
+    .container-custom {
+        @apply container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+    }
+    
+    .section-spacing {
+        @apply py-16 md:py-20 lg:py-28;
+    }
+    
+    .section-spacing-sm {
+        @apply py-12 md:py-16 lg:py-20;
+    }
+}
+
